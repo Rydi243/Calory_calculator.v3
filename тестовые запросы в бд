@@ -1,0 +1,13 @@
+create table if not exists calorie (
+    id            serial primary key,
+    product       text     not null,
+    weight        int      not null,
+    calorie       int      not null
+);
+
+INSERT INTO public.calorie (product, weight, calorie)
+VALUES ('Рис', 100, 330);
+INSERT INTO public.calorie (product, weight, calorie)
+VALUES ('Макароны', 100, 112);
+INSERT INTO public.calorie (product, weight, calorie)
+VALUES ('Картофель', 100, 77);
